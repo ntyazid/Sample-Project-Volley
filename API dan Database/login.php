@@ -28,7 +28,7 @@ if ($email !== null && $password !== null) {
     } else {
         // user is not found with the credentials
         $response["error"] = TRUE;
-        $response["error_msg"] = "Login credentials are wrong. Please try again!";
+        $response["error_msg"] = "Login gagal, silahkan cek username dan password anda!";
         echo json_encode($response);
     }
 } else {
